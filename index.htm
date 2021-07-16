@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jiaul Haque">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Drop Education </title>
+    <link rel="sortcut icon" href="images/header-img.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="container">
+    <header class="header">
+        <div class="centerContainer">
+
+            <nav>
+                <div class="logo"><img src="images/logo.png" alt="logo"></div>
+                <ul>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button>Sine in</button>
+
+
+                <div id="google_translate_element"></div>
+
+
+
+            </nav>
+            <div class="header-left-right-content">
+                <div class="leftheader">
+                    <h1>Education for all</h1>
+                    <p>A bank is a financial institution that accepts deposits from the <br>
+                        public and creates credite. For all of your financial needs </p>
+                    <button>Read more</button>
+                </div>
+                <div class="rightheader">
+                    <img src="images/header-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-------------------admition section start here----------------------------->
+    <div class="centerContainer">
+        <div id="services" class="admisition">
+            <div class="apply">
+                <h1>apply for admissition</h1>
+                <hr>
+                <br>
+                <p>make it more simple</p>
+                <div class="email">
+                    <input type="email" placeholder="Enter your email" required>
+                    <input class="submit" type="submit" value="" required>
+                </div>
+            </div>
+            <br>
+            <div class="testimonials">
+                <p>
+                    "Before Coursecity, I was working two minimum wage jobs. Now,
+                    & new life!"I learned most of my programming skills and
+                    hrough self-study and the material available.
+                    <br>
+                </p>
+                <br>
+                <h3>stephanie maglon</h3>
+                <ul class="test">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="secondAdmisionSect">
+
+                <div class="leftadmissiton">
+                    <img src="images/second-img.png" alt="">
+                </div>
+
+
+                <div class="rightadmissiton">
+                    <h1>
+                        Welcome to Eduin university,
+                        Constant self-improvement
+                        as an instructor.
+                    </h1>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.
+                        <br>
+                        <br>
+                        Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.
+                    </p>
+                    <button>Get start</button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--        contact Self section start here-->
+        <div class="contactSelf">
+            <div class="leftcontactSelf">
+                <h1>
+                    Welcome to Eduin university,
+                    Constant self-improvement
+                    as an instructor.
+                </h1>
+                <p>Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education, Science and Community Development.
+                    <br>
+                    <br>
+                    Education City is initiative of our Qatar Foundation for Education, Science and Community Development. Education City initiative of our Qatar Foundation for Education.
+                </p>
+                <button>Get start</button>
+            </div>
+            <div class="rightcontactSelf">
+                <img src="images/third-img.png" alt="third img">
+            </div>
+        </div>
+
+
+        <!-----------------card desing here---------------------->
+        <div id="product" class="cardarea">
+            <div class="card">
+                <img src="images/first-icon.png" alt="">
+                <div class="cardcontent">
+                    <h1>Global Student</h1>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/second-icon.png" alt="second icon">
+                <div class="cardcontent">
+                    <h1>Success Rate </h1>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/third-icon.png" alt="third icon">
+                <div class="cardcontent">
+                    <h1>Education Services </h1>
+                    <p>Education City is initiative of our Qatar Foundation for Education, Science Community Development. </p>
+                </div>
+            </div>
+        </div>
+        <div class="topbtn">
+            <a href="#">&#11014;
+            </a>
+        </div>
+
+    </div>
+
+
+    <div class="centerContainer">
+
+        <footer id="contact">
+            <div class="leftp">
+                <p> &#x2117; 2021 Jiaul Haque All Rights Reserved </p>
+                <div class="rightp">
+                    <p>About Company</p>
+                    <p>Privacy Policy</p>
+                    <p>Help Center</p>
+                    <p>Terms</p>
+                    <p>Site Map</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script type="text/javascript">
+    let ul = document.querySelector("ul");
+    let li = document.querySelectorAll('li');
+
+
+    li.forEach(el => {
+        el.addEventListener('click', function() {
+            ul.querySelector('.active').classList.remove('active');
+            el.classList.add('active');
+        });
+    });
+
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+</script>
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<body>
+</body></html>

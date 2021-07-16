@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    /*    font-family: 'Poppins', sans-serif;*/
+}
+
+:root {
+    --headerbg: linear-gradient(#6d0eff, #6500ff);
+    --btn: #ff5f60;
+    --plan: #1f3148;
+    --white: #FFFFFF;
+    --blackh1: #333333;
+    --blackp: #8c8c8c;
+    --fotter: #d4d4d4;
+    --fecuse: #f97147;
+    --testlicolor: #ff9800;
+}
+
+::-webkit-scrollbar {
+    background: var(--btn);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--plan);
+}
+
+::selection {
+    background-color: var(--plan);
+    color: var(--white);
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.5;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--blackh1);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--blackp);
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    width: 15rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: var(--white);
+    background: var(--btn);
+    border-radius: 5rem;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1111;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: var(--plan);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
+    transition: linear 0.5s;
+
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+.fullContainer {
+    width: 100%;
+    height: auto;
+}
+
+.centerContainer {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    background: var(--headerbg);
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    -ms-align-items: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 0 0 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    margin-right: 3rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--white);
+    position: relative;
+
+}
+
+.active {
+    background: var(--btn);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--btn);
+    top: 2.5rem;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: linear 0.5s;
+    -o-transition: linear 0.5s;
+    transition: linear 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-left-right-content {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.leftheader {
+    width: 50%;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+
+.leftheader h1 {
+    font-size: 5rem;
+    color: var(--white);
+
+}
+
+.leftheader p {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.rightheader {
+    width: 50%;
+    padding: 2rem;
+}
+
+.rightheader img {
+    padding: 2rem;
+    margin: 1rem;
+}
+
+/*    <!-------------------admition section start here----------------------------->*/
+.admisition {
+    width: 100%;
+    height: auto;
+}
+
+
+#google_translate_element {
+    background-color: #fff;
+    width: 230px;
+    height: 35px;
+    display: inline;
+    text-align: center;
+}
+
+#google_translate_element div {
+    background-color: var(--btn);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 0px;
+}
+
+
+
+#google_translate_element img {
+    height: 18px;
+}
+
+/*top btn desing here-------------------*/
+.topbtn a {
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    background: var(--btn);
+    bottom: 1rem;
+    right: 1rem;
+    color: var(--white);
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+
+.apply {
+    width: 26rem;
+    height: 20rem;
+    background: var(--btn);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    position: absolute;
+    top: 50rem;
+    left: 25rem;
+    -webkit-box-shadow: 0 -2rem 0 var(--plan);
+    box-shadow: 0 -2rem 0 var(--plan);
+}
+
+.apply h1 {
+    text-transform: capitalize;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.apply hr {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    background: var(--white);
+    height: 0.3rem;
+}
+
+.apply p {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.apply .email {
+    width: 24rem;
+    background: var(--white);
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 5rem;
+    display: flex;
+}
+
+.apply input[type="email"] {
+    border: none;
+    line-height: 4rem;
+    border-radius: 2rem;
+    margin: 0 0 0 1.2rem;
+    outline: none;
+    font-size: 1.5rem;
+    width: 17rem;
+    padding: 0.3rem;
+}
+
+.apply .submit {
+    width: 40rem;
+    height: 5rem;
+    background-image: url('images/plan.png');
+    border: none;
+    outline: none;
+    background-color: var(--plan);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    cursor: pointer;
+}
+
+.testimonials {
+    width: 30%;
+    float: right;
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimonials p {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.testimonials h3 {
+    color: var(--testlicolor);
+    text-transform: capitalize;
+    font-size: 2.4rem;
+}
+
+.testimonials .test {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials .test li {
+    color: var(--fecuse);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+
+}
+
+.testimonials .test li:nth-child(3) {
+    color: var(--testlicolor);
+}
+
+
+.secondAdmisionSect {
+    width: 100%;
+    height: auto;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secondAdmisionSect .leftadmissiton {
+    width: 50%;
+    padding: 2rem;
+    margin: 4rem;
+}
+
+.secondAdmisionSect .rightadmissiton {
+    width: 50%;
+    padding: 2rem;
+}
+
+.secondAdmisionSect .rightadmissiton h1 {
+    font-size: 3rem;
+}
+
+.secondAdmisionSect .rightadmissiton p {
+    font-size: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+/*       <!--contact Self section start here-->*/
+
+.contactSelf {
+    width: 100%;
+    height: auto;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactSelf .leftcontactSelf {
+    width: 50%;
+    padding: 2rem;
+    margin: 4rem;
+}
+
+.contactSelf .leftcontactSelf {
+    width: 50%;
+    padding: 2rem;
+}
+
+.contactSelf .leftcontactSelf h1 {
+    font-size: 3rem;
+}
+
+.contactSelf .leftcontactSelf p {
+    font-size: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.rightcontactSelf {
+    width: 50%;
+    padding: 2rem;
+    margin: 4rem;
+}
+
+
+/*        <!-----------------card desing here---------------------->*/
+.cardarea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 18rem;
+}
+
+.card {
+    width: 30rem;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card h1 {
+    font-size: 2.5rem;
+}
+
+.card p {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+/*footer section design here*/
+footer {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.leftp p {
+    font-size: 1.7rem;
+    margin-right: 10rem;
+}
+
+.leftp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.rightp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightp p {
+    margin: 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:940px) {
+    #google_translate_element {
+        margin-top: 1rem;
+        border-radius: 4rem;
+
+    }
+
+    .header {
+        background: var(--headerbg);
+        position: relative;
+    }
+
+    nav {
+
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin: 1rem 0;
+    }
+
+
+
+    .header-left-right-content {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .leftheader {
+        width: 100%;
+
+    }
+
+
+
+    .rightheader {
+        width: 100%;
+    }
+
+
+    /*    <!-------------------admition section start here----------------------------->*/
+
+    .apply {
+        position: relative;
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .testimonials {
+        width: 50%;
+        float: none;
+    }
+
+
+    .secondAdmisionSect {
+        width: 100%;
+        height: auto;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .secondAdmisionSect .leftadmissiton {
+        width: 100%;
+        margin: 3rem;
+        text-align: center;
+    }
+
+    .secondAdmisionSect .leftadmissiton img {
+        width: 75%;
+    }
+
+    .secondAdmisionSect .rightadmissiton {
+        width: 100%;
+        padding: 3rem;
+    }
+
+
+    /*<!--contact Self section start here-->*/
+
+    .contactSelf {
+        flex-direction: column;
+    }
+
+    .contactSelf .leftcontactSelf {
+        width: 100%;
+    }
+
+
+    .rightcontactSelf {
+        width: 100%;
+        margin: 5rem;
+        padding: 3rem;
+    }
+
+
+
+    .leftp p {
+        font-size: 1.7rem;
+        margin-right: 0rem;
+    }
+
+    .leftp {
+        flex-wrap: wrap;
+    }
+
+
+    .rightp p {
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width:430px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+
+    .leftp p {
+        font-size: 1.7rem;
+        margin-right: 0rem;
+    }
+
+    .leftp {
+        flex-wrap: wrap;
+    }
+
+
+    .rightp p {
+        margin: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .leftheader h1 {
+        font-size: 3rem;
+    }
+
+
+}
